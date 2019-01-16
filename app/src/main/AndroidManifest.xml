@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    package="com.disciplesbay.latterhousehq.mychurch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/mytheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="[ca-app-pub-5688268523815560~5407898954]"/>
+
+
+        <activity
+            android:name=".EventsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SermonsActivity"
+            android:label="Sermons"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TestimoniesActivity"
+            android:label="Testimonies"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddTestimonyActivity"
+            android:label="@string/new_testimony"
+            android:parentActivityName=".TestimoniesActivity"
+            android:theme="@style/mytheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Me"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity
+            android:name=".ChannelActivity"
+            android:label="@string/latest_videos"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".GivingActivity"
+            android:label="Givings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Make Payment"
+            android:parentActivityName=".GivingActivity" />
+        <activity
+            android:name=".AndroidBuildingMusicPlayerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PlayListActivity"
+            android:label="My Downloads"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/mytheme" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".BranchesActivity" />
+        <activity android:name=".PermissionsActivity" />
+        <activity
+            android:name=".DownloadActivity"
+            android:label="Start Download" />
+        <activity android:name=".FullImage" />
+
+        <service
+            android:name=".helper.NLService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".VideoPlayerActivity" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/contact_us" />
+        <activity
+            android:name=".BooksActivity"
+            android:label="@string/books"
+            android:parentActivityName=".BooksActivity" />
+        <activity android:name=".MyDownloadsActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".CheckOutActivity" />
+        <activity android:name=".TrendingActivity" />
+        <activity android:name=".DownloadsActivity" />
+        <activity android:name=".SettingsActivity" />
+
+        <service android:name=".download.DownloadManagerService" />
+
+        <activity android:name=".EventDetialsActivity" />
+
+
+
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme"/>
+
+        <activity android:name=".ViewCartActivity"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            tools:replace="android:theme"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name"/>
+
+
+    </application>
+
+</manifest>
