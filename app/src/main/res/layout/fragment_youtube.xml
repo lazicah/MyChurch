@@ -1,0 +1,20 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.YoutubeFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/youtube_fragment"
+
+        />
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.disciplesbay.latterhousehq.mychurch.ContactActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Send Us a Mail, and we'll respond promptly"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="Send"
+        android:background="@drawable/button_background_rectangular"
+        android:drawableBottom="@drawable/ic_mailing"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Visit our Website"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textColor="@color/red"/>
+
+
+</LinearLayout>

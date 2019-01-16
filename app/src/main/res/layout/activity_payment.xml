@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorAccent"
+
+        android:elevation="5dp"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.braintreepayments.cardform.view.SupportedCardTypesView
+                android:id="@+id/supported_card_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp" />
+
+            <com.braintreepayments.cardform.view.CardForm
+                android:id="@+id/card_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/bt_margin" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_attach_money_black_24dp"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/bt_text_input_layout"
+                android:labelFor="@+id/amount"
+                android:layout_height="wrap_content">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/amount"
+                    style="@style/bt_card_form_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount e.g 1,000"
+                    android:inputType="numberDecimal"
+                    app:met_underlineColor="@color/colorAccent"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_bookmark_black_24dp"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/bt_text_input_layout"
+                android:labelFor="@+id/reference"
+                android:layout_height="wrap_content">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/reference"
+                    style="@style/bt_card_form_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:met_underlineColor="@color/colorAccent"
+                    android:hint="Reference e.g Tithe, offering"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="Pay"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

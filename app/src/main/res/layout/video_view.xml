@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_card_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Card details:"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/card_number"
+            android:inputType="number"
+            android:minEms="8"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_cvc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/cvv"
+            android:inputType="number"
+            android:maxLength="4"
+            android:minEms="4"
+            android:text="" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edit_expiry_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_card_num"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:hint="@string/mm"
+        android:inputType="number"
+        android:maxEms="3"
+        android:maxLength="2"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edit_expiry_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_card_num"
+        android:layout_toRightOf="@id/edit_expiry_month"
+        android:gravity="left"
+        android:hint="@string/yyyy"
+        android:inputType="number"
+        android:maxEms="4"
+        android:maxLength="4"
+        android:text="" />
+
+    <Button
+    android:id="@+id/loadCard"
+        android:layout_below="@id/edit_expiry_month"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Use saved card"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:textStyle="italic"
+        android:background="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:layout_below="@id/edit_expiry_month"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="4dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageTestifier"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/testifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/username" />
+
+                <TextView
+                    android:id="@+id/testifier_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:paddingLeft="10dp"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/testifier_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="@string/date_of_join" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:id="@+id/divider"
+            android:background="@drawable/divider"
+
+            />
+
+        <TextView
+            android:id="@+id/testimony_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:elevation="20dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/testimony_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/second_grey"
+
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/description"
+            android:textStyle="italic"
+            />
+
+        <View
+            style="@style/Divider"
+            android:id="@+id/divider3"
+            android:background="@drawable/divider"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="1"
+
+                app:srcCompat="@drawable/ic_share_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_chat_bubble_outline_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

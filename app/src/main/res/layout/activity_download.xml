@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.disciplesbay.latterhousehq.mychurch.DownloadActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+    <EditText
+        android:id="@+id/download_manager_url_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input download File url."
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/you_re_about_to_download"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/file_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/download_manager_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Download"
+        android:textAllCaps="false"
+        android:enabled="true"/>
+</LinearLayout>

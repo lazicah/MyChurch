@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/testimony_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        tools:context="com.disciplesbay.latterhousehq.mychurch.TestimoniesActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.baoyz.widget.PullRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/test_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="vertical" />
+
+            </com.baoyz.widget.PullRefreshLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:clickable="true"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/fab_add"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:rippleColor="@color/green" />
+
+
+</android.support.design.widget.CoordinatorLayout>

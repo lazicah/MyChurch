@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="220dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/join_us"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

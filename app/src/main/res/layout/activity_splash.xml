@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lin_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/splash"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/log"
+            android:elevation="@dimen/cardview_default_radius" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading church data...."
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-5688268523815560/6693060467">
+    </com.google.android.gms.ads.AdView>
+
+</FrameLayout>

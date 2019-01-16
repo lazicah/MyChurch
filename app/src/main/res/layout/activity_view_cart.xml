@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:theme="@style/mytheme"
+            app:layout_collapseMode="pin">
+
+            <TextView
+                android:id="@+id/no_of_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:text="MY BAG (3)"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+            <ImageView
+                android:id="@+id/empty_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="50dp"
+                android:src="@drawable/ic_trash"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/empty_cart_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Item's in cart"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="100dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|end"
+
+        >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+            android:text="CHECK OUT"
+            android:textColor="@color/white"
+            android:theme="@style/mytheme" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/continueshopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:enabled="false"
+            android:text="CONTINUE SHOPPING"
+            android:textColor="@color/white"
+            android:theme="@style/mytheme" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <!-- end linear tag -->
+
+
+</FrameLayout>

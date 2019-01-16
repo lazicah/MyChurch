@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/icon_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillAfter="false"
+                android:fillEnabled="false">
+
+                <ImageView
+                    android:id="@+id/icon_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/announce_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/announceMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/announceYear"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/announceName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.disciplesbay.latterhousehq.mychurch.Utils.FeedImageView
+                android:id="@+id/feedImage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/announcebody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dimissDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/button_background_rectangular"
+                android:text="Dismiss" />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

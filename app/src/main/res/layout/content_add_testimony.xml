@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.AddTestimonyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Share your Testimony with us"
+                android:textColor="@color/colorAccent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:alpha="1.5"
+                android:background="@color/divider" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/pick_image"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/ic_image_black_24dp"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="1.5"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:id="@+id/imagelinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/testimonyImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear"
+                android:id="@+id/clear"
+                android:textColor="@color/red"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/test"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_height="0dp"
+            android:gravity="top"
+            app:met_hideUnderline="true"
+            android:layout_weight="1"
+            android:hint="write something here...."/>
+
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:enabled="true"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+    android:background="#ffffff"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:id="@+id/lr">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/icon_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fillAfter="false"
+                android:fillEnabled="false">
+
+                <ImageView
+                    android:id="@+id/icon_profile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/announce_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/announceMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/announceYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:background="@color/colorAccent"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/announceName"
+                android:textAllCaps="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

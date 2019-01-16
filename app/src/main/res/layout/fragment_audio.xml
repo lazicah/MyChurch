@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.AudioFragment"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/sermonLoader"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|center"
+        android:visibility="visible" />
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/audio_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+</FrameLayout>

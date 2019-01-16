@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eventsLl"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/blur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date_of_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/eventNames"
+                android:layout_marginLeft="10dp"
+                android:text="Monday 4th of August 2018"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/eventNames"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/locaLay"
+                android:layout_marginLeft="10dp"
+                android:text="The name of the Event"
+                android:textAllCaps="true"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:id="@+id/locaLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/eventLoc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:text="the cathedral of grace"
+                    android:textColor="@color/gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
+

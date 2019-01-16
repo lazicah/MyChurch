@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:alpha="0.5"
+        android:src="@drawable/log"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="@dimen/cardMarginVertical"
+        android:layout_marginLeft="@dimen/cardMarginHorizontal"
+        android:layout_marginRight="@dimen/cardMarginHorizontal"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="1.5dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/login_user_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input Registered email"
+                android:textColor="@color/drawer_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/login_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/drawer_text"
+                android:textSize="20sp"
+               />
+
+            <TextView
+                android:id="@+id/login_password_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tell me your password (be quiet)"
+                android:textColor="@color/drawer_text"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/drawer_text"
+                android:textSize="20sp"
+                 />
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/button_background_rectangular_red"
+                android:text="@string/btn_login"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+
+                 />
+
+
+            <!-- Link to Login Screen -->
+
+            <Button
+                android:id="@+id/btnLinkToRegisterScreen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dip"
+                android:background="@null"
+                android:text="@string/btn_link_to_register"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

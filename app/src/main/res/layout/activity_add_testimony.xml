@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.AddTestimonyActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:theme="@style/mytheme">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bird"
+
+                app:layout_collapseMode="parallax" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/testParent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <EditText
+                android:id="@+id/testimony_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:hint="@string/testimony_details_hint"
+                android:gravity="top"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/loadImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add_black_24dp"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add or Change Image"/>
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:id="@+id/testimonyImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_margin="20dp"
+        android:tooltipText="send"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

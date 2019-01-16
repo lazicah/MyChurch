@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.ChannelActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.baoyz.widget.PullRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ListView
+            android:id="@+id/videoList"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/videolist">
+
+        </ListView>
+
+
+    </com.baoyz.widget.PullRefreshLayout>
+</LinearLayout>

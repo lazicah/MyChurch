@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.disciplesbay.latterhousehq.mychurch.GetBooksFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/relative_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="7dp">
+
+
+            <TextView
+                android:id="@+id/top_paid_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Paid"
+
+                android:textAppearance="?attr/textAppearanceLargePopupMenu"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/top_paidLoader"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/top_paid_RECYCLE"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more1" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/relative_Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="7dp">
+
+
+            <TextView
+                android:id="@+id/Study_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study Books"
+
+                android:textAppearance="?attr/textAppearanceLargePopupMenu"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/studyLoader"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/studyBooksRecycle"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more1" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:id="@+id/relative_Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="7dp">
+
+
+            <TextView
+                android:id="@+id/Devotional_books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Devotionals"
+
+                android:textAppearance="?attr/textAppearanceLargePopupMenu"
+                android:textColor="@color/colorAccent" />
+
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/youtubeLoader"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="visible" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Devotional_booksRecycle"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/more1" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
